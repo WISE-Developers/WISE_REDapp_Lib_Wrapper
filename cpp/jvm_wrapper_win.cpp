@@ -16,10 +16,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "stdafx.h"
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
 
 #include "jvm_wrapper.h"
-#include "prom_vers.h"
 
 #include <string>
 #include <array>

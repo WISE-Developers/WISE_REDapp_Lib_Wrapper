@@ -20,7 +20,6 @@
 
 #include "types.h"
 #include "jvm_wrapper.h"
-#include "prom_vers.h"
 #include "hss_inlines.h"
 
 #include <unistd.h>
