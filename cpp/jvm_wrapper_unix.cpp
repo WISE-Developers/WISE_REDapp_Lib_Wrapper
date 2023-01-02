@@ -41,8 +41,8 @@ static std::vector<std::string> dependencies =
   "commons-collections4.jar", "commons-compress.jar",
   "commons-io.jar", "commons-math3.jar",
   "curvesapi.jar", "error_prone_annotations.jar",
-  "failureaccess.jar", "Fuel.jar",
-  "FWI.jar", "Grid.jar", "gson.jar", "guava.jar",
+  "failureaccess.jar", "fuel.jar",
+  "fwi.jar", "grid.jar", "gson.jar", "guava.jar",
   "hss-java.jar", "jakarta.activation.jar",
   "jakarta.xml.bind-api.jar", "javax.activation-api.jar",
   "jaxb-api.jar", "jaxb-core.jar", "jaxb-impl.jar",
@@ -50,8 +50,8 @@ static std::vector<std::string> dependencies =
   "math.jar", "poi.jar", "poi-ooxml.jar",
   "poi-ooxml-lite.jar", "protobuf-java.jar",
   "protobuf-java-util.jar", "REDapp_Lib.jar",
-  "SparseBitSet.jar", "Weather.jar", "WTime.jar",
-  "xmlbeans.jar" };
+  "SparseBitSet.jar", "weather.jar", "wtime.jar",
+  "xml-apis.jar", "xmlbeans.jar" };
 
 
 class NativeJVM_Unix : public NativeJVM {
