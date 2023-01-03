@@ -783,6 +783,7 @@ WeatherCollection* JavaWeatherStream::importHourly(std::string& filename, long* 
 			jfieldID rhFld = priv.GetField(wcDef, std::string("rh"), std::string("D"));
 			jfieldID wdFld = priv.GetField(wcDef, std::string("wd"), std::string("D"));
 			jfieldID wsFld = priv.GetField(wcDef, std::string("ws"), std::string("D"));
+			jfieldID wgFld = priv.GetField(wcDef, std::string("wg"), std::string("D"));
 			jfieldID precipFld = priv.GetField(wcDef, std::string("precip"), std::string("D"));
 			jfieldID ffmcFld = priv.GetField(wcDef, std::string("ffmc"), std::string("D"));
 			jfieldID DMCFld = priv.GetField(wcDef, std::string("DMC"), std::string("D"));
@@ -801,6 +802,7 @@ WeatherCollection* JavaWeatherStream::importHourly(std::string& filename, long* 
 				coll.rh = priv.CallDoubleField(wc, rhFld);
 				coll.wd = priv.CallDoubleField(wc, wdFld);
 				coll.ws = priv.CallDoubleField(wc, wsFld);
+				coll.wg = priv.CallDoubleField(wc, wgFld);
 				coll.precip = priv.CallDoubleField(wc, precipFld);
 				coll.ffmc = priv.CallDoubleField(wc, ffmcFld);
 				coll.DMC = priv.CallDoubleField(wc, DMCFld);
