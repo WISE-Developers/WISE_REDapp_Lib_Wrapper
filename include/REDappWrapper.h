@@ -40,6 +40,7 @@ struct WeatherCollection {
 	double rh;
 	double wd;
 	double ws;
+	double wg;	// gust
 	double precip;
 	double ffmc;
 	double DMC;
@@ -56,6 +57,7 @@ struct WeatherCollection {
 		rh = 0;
 		wd = 0;
 		ws = 0;
+		wg = -1.0;
 		precip = 0;
 		ffmc = -1;
 		DMC = -1;
