@@ -29,6 +29,7 @@
 #include <array>
 #include <stdio.h>
 #include <cctype>
+#include <optional>
 
 #define BOOST_FILESYSTEM_NO_DEPRECATED
 #define BOOST_FILESYSTEM_NO_LIB
