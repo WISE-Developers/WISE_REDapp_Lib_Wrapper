@@ -49,7 +49,7 @@ static std::vector<std::string> dependencies =
   "poi-ooxml-lite.jar", "protobuf-java.jar",
   "protobuf-java-util.jar", "REDapp_Lib.jar",
   "SparseBitSet.jar", "weather.jar", "wtime.jar",
-  "xml-apis.jar", "xmlbeans.jar" };
+  "xmlbeans.jar" };
 
 
 class NativeJVM_Unix : public NativeJVM {
