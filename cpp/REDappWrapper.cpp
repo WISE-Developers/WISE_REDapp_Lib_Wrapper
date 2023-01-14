@@ -691,7 +691,7 @@ void Calendar::fromString(const std::string& val) {
 JavaWeatherStream::JavaWeatherStream()
 	 : JavaObject(0, JavaClassDef()) {
 	REDappWrapperPrivate& priv = REDappWrapperPrivate::get_mutable_instance();
-	JavaClassDef def = { priv.GetClass("ca/cwfgm/weather/WeatherCondition"), "ca/cwfgm/weather/WeatherCondition" };
+	JavaClassDef def = { priv.GetClass("ca/wise/weather/WeatherCondition"), "ca/wise/weather/WeatherCondition" };
 	_type = def;
 	jmethodID mid = priv.GetMethod(_type, std::string("<init>"), std::string("()V"));
 	_internal = priv.NewObject((jclass)_type.data, mid, nullptr);
@@ -776,7 +776,7 @@ WeatherCollection* JavaWeatherStream::importHourly(std::string& filename, long* 
 		if (size > 0) {
 			WeatherCollection* wcollection = new WeatherCollection[size];
 			jmethodID listGet = priv.GetMethod(listClass, std::string("java/util/List"), std::string("get"), std::string("(I)Ljava/lang/Object;"));
-			JavaClassDef wcDef = { priv.GetClass("ca/cwfgm/weather/WeatherCondition$WeatherCollection"), "ca/cwfgm/weather/WeatherCondition$WeatherCollection" };
+			JavaClassDef wcDef = { priv.GetClass("ca/wise/weather/WeatherCondition$WeatherCollection"), "ca/wise/weather/WeatherCondition$WeatherCollection" };
 			jfieldID hourFld = priv.GetField(wcDef, std::string("hour"), std::string("D"));
 			jfieldID epochFld = priv.GetField(wcDef, std::string("epoch"), std::string("J"));
 			jfieldID tempFld = priv.GetField(wcDef, std::string("temp"), std::string("D"));
